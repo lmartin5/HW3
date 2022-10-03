@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+}
+
+.CV-top {
+    background: lightslategray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 250px;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.CV-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.CV-left {
+    padding: 20px;
+    text-align: center;
+    flex-basis: 25%;
+    background: lightcoral;
+}
+
+.summary-paragraph {
+    text-align: left;
+}
+
+.CV-right {
+    flex-basis: 75%;
+    background: cornflowerblue;
+}
