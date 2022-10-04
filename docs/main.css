@@ -11,7 +11,7 @@ body {
 
 .logo {
     display: block;
-    width: 150px;
+    width: 100px;
 }
 
 .profile {
@@ -38,11 +38,38 @@ nav {
     background: lightcoral;
 }
 
-.summary-paragraph {
+.summary {
+    margin-top: 20px;
     text-align: left;
 }
 
 .CV-right {
     flex-basis: 75%;
     background: cornflowerblue;
+}
+
+.CV-right section {
+    margin: 20px;
+}
+
+/* https://www.geeksforgeeks.org/how-to-resize-list-style-image-in-css/ */
+.skills-list li {
+    list-style: none;
+    padding-left: 28px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-image: url("images/wing-bullet.png");
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+.skills-list li::before {
+    list-style: none;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-image: url("images/wing-bullet.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
 }

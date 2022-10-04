@@ -3,7 +3,7 @@ Name:     Luke Martin
 Class:    CPSC 332 - Web Dev
 Semester: Fall 2022
 Project:  Homework 3
-Last Mod: October 3, 2022
+Last Mod: October 4, 2022
 Desc:     The file contains my CV website, styled with CSS.
 -->
 
@@ -11,41 +11,259 @@ Desc:     The file contains my CV website, styled with CSS.
 <html lang="en">
 <head>
     <title>Luke Martin CV</title>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
 </head>
 <body>
     <header class="CV-top">
-        <img class="logo" src="logo.png" alt="Basketball sunrise logo">
+        <img class="logo" src="images/logo.png" alt="Basketball sunrise logo">
         <nav>
-            <a href="./">Home/Introduction</a>
-            <a href="career/">Career</a>
-            <a href="education/">Education</a>
-            <a href="interests/">Interests</a>
+            <a href="#intro">Introduction</a>
+            <a href="#skills">Core Skills</a>
+            <a href="#career">Career Summary</a>
+            <a href="#education">Education and Qualifications</a>
+            <a href="#interests">Interests</a>
         </nav>
     </header>
 
     <div class="CV-main">
         <div class="CV-left">
-            <img class="profile" src="profile.png" alt="Luke Martin">
+            <img class="profile" src="images/profile.png" alt="Luke Martin">
             <h1>Luke Martin</h1>
-            <p class="summary-paragraph">
-                &emsp;I am a student at Gonzaga University majoring in computer science and mathematics. 
-                I grew up on a wheat and cattle ranch outside of Rufus, OR. Hardwork and commitment 
-                are two values very important to me. I am on track to graduate with my BS in computer 
-                science in June 2023, and with my BS in mathematics in August 2023. As of right now, 
-                I plan to persue graduate studies in math with the ultimate goal of obtaining a PhD. My passion 
-                for math developed in my research experience at Gonzaga
-                and during my REU in the summer of 2022.
-                However, I also have interests in working in consulting for software development. I believe
-                that my strong mathematical reasoning and programming skills will allow me to be successful 
-                beyond my undergraduate studies.
-            </p>
+            <h2>Computer Science Major</h2>
+            <h2>Mathematics Major</h2>
+            <section id="intro" class="summary">
+                <h4>Personal Summary</h4>
+                <p>
+                    &emsp;I am a student at Gonzaga University majoring in computer science and mathematics. 
+                    I grew up on a wheat and cattle ranch outside of Rufus, OR. Hardwork and commitment 
+                    are two values very important to me. I am on track to graduate with my BS in computer 
+                    science in June 2023, and with my BS in mathematics in August 2023. As of right now, 
+                    I plan to persue graduate studies in math with the ultimate goal of obtaining a PhD. My passion 
+                    for math developed in my research experience at Gonzaga
+                    and during my REU in the summer of 2022.
+                    However, I also have interests in working in consulting for software development. I believe
+                    that my strong mathematical reasoning and programming skills will allow me to be successful 
+                    beyond my undergraduate studies.
+                </p>
+            </section>
         </div>
         
         <div class="CV-right">
-
+        <section id="skills">
+            <h1>Core Skills</h1>
+            <ul class="skills-list">
+                <li>
+                    Programming Languages
+                    <ul>
+                        <br>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>C</li>
+                    </ul>
+                </li>
+                <li>Database Management</li>
+                <li>Microsoft Office</li>
+                <li>Mathematical/Logical Reasoning</li>
+                <li>
+                    Advanced Knowledge in Fields of Math
+                    <ul>
+                        <br>
+                        <li>Abstract Algebra</li>
+                        <li>Linear Algebra</li>
+                        <li>Combinatorics</li>
+                        <li>Graph Theory</li>
+                    </ul>
+                </li>
+                <li>
+                    Soft Skills
+                    <ul>
+                        <br>
+                        <li>Communication</li>
+                        <li>Writing Abilities</li>
+                        <li>Adaptability</li>
+                        <li>Work Ethic</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="career">
+            <h1>Career</h1>
+            <section>
+                <h4 id="work">Work Experience</h4>
+                <table>
+                <caption>Employment Summary</caption>
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Employer</th>
+                        <th>Dates</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math Tutor</td>
+                        <td>Gonzaga University Math Department</td>
+                        <td>September 2021 - Present</td>
+                        <td><ul>
+                            <li>Effectively communicated mathematical ideas</li>
+                            <li>Specialized in calculus and discrete mathematics</li>
+                            <li>Demonstrated computational and proof-based problem solving</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Math Research</td>
+                        <td>Gonzaga University Math Department</td>
+                        <td>November 2021 - Present</td>
+                        <td><ul>
+                            <li>Researched in graph theory with Drs. McKenzie and Overbay</li>
+                            <li>Presented at multiple conferences</li>
+                            <li>Awarded Best Presentation at PiMUC 2022</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Math REU Participant</td>
+                        <td>Texas State University Math Department</td>
+                        <td>June 2022 - August 2022</td>
+                        <td><ul>
+                            <li>Wrote and reviewed mathematical writing to be published in academic journals</li>
+                            <li>Researched in computational algebra, commutative algebra, and graph theory</li>
+                            <li>Effectively worked in a team of four students</li>
+                        </ul></td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+            <section>
+                <h4 id="research">Research</h4>
+                <section>
+                    <h5>Publications</h5>
+                    <ul>
+                        <li><em>M&#246;bius Book Embeddings</em>, Nicholas Linthacum, Luke Martin, Thomas McKenzie, 
+                            Shannon Overbay, and Line Ai Tan, 2022 (Submitted).</li>
+                        <li><em>Classifying Solvable Primitive Permutation Groups of Low Rank</em>, Mallory Dolorfino, 
+                            Luke Martin, Zachary Slonim, Yuxuan Sun, and Yong Yang, 2022 (Submitted).</li>
+                        <li><em>On the Characterization of Sporadic Simple Groups by Codegrees</em>, Mallory Dolorfino, 
+                            Luke Martin, Zachary Slonim, Yuxuan Sun, and Yong Yang, 2022 (In Progress).</li>
+                        <li><em>On the Book Thickness of Total Graphs of Commutative Rings</em>, Mallory Dolorfino, 
+                            Luke Martin, Zachary Slonim, Yuxuan Sun, and Yong Yang, 2022 (In Progress).</li>
+                    </ul>
+                </section>
+                <section>
+                    <h5>Talks</h5>
+                    <ul>
+                        <li><em>M&#246;bius Book Embeddings and Applications</em>, 2022 Pacific Inland 
+                            Mathematics undergraduate conference (PiMUC), Washington State University, Pullman, 
+                            WA, April 9, 2022.</li>
+                        <li><em>M&#246;bius Book Embeddings and Applications</em>, 53rd Southeastern International 
+                            Conference on Combinatorics, Graph Theory and Computing, Florida Atlantic University, Boca Raton, 
+                            FL (Virtual), March 7-11, 2022.</li>
+                    </ul>
+                </section>
+                <section>
+                <h5>Posters</h5>
+                    <ul>
+                        <li><em>M&#246;bius Book Embeddings</em>, Nicholas Linthacum, Luke Martin, Thomas McKenzie, 
+                            Shannon Overbay, and Line Ai Tan, 2022.</li>
+                        <li><em>On the Characterization of Alternating Groups by Codegrees</em>, Mallory Dolorfino, 
+                            Luke Martin, Zachary Slonim, Yuxuan Sun, and Yong Yang, 2022.</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section id="education">
+            <h1>Education and Qualifications</h1>
+            <table>
+                <caption>Institutions Attended</caption>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Location</th>
+                        <th>Dates</th>
+                        <th>Studies/Degrees/Relevant Courses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gonzaga University</td>
+                        <td>Spokane, WA</td>
+                        <td>August 2019 - Present</td>
+                        <td><ul>
+                            <li>B.S. in Computer Science (May 2023)</li>
+                            <li>B.S. in Mathematics (August 2023)</li>
+                            <li>President's List</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Columbia Gorge Community College</td>
+                        <td>The Dalles, OR</td>
+                        <td>September 2018 - June 2019</td>
+                        <td><ul>
+                            <li>Part time student during high school</li>
+                            <li>Honor Roll</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Sherman County High School</td>
+                        <td>Moro, OR</td>
+                        <td>September 2018 - June 2019</td>
+                        <td><ul>
+                            <li>High school diploma</li>
+                            <li>Valedictorian</li>
+                        </ul></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Qualifications</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date Received</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fundamentals of Coaching</td>
+                        <td>December 13, 2019</td>
+                        <td>NFHS certification for the basics of coaching in high school athletics</td>
+                    </tr>
+                    <tr>
+                        <td>Heat Illness Prevention</td>
+                        <td>December 12, 2019</td>
+                        <td>NFHS certification for preventing heat illness in high school athletes during sports practices and games</td>
+                    </tr>
+                    <tr>
+                        <td>Concussion in Sports</td>
+                        <td>May 7, 2021</td>
+                        <td>NFHS certification for preventing, identifying, and handling student-athletes with concussions in high school sports</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="interests">
+            <h1>Interests and Hobbies</h1>
+            <ol>
+                <li>
+                    Research in mathematics<br>
+                    <img src="images/math-presenting.jpg" alt="Presentation at PiMUC 2022" width="500">
+                </li>
+                <li>
+                    Coaching basketball<br>
+                    <img src="images/coaching.jpg" alt="5th/6th boys basketball at Condon" width="500">
+                </li>
+                <li>
+                    Running<br>
+                    <a href="https://www.facebook.com/hauserlake10kicebreakerrun/" target="_blank">
+                        <img src="images/hauser.png" alt="Annual Lake Hauser 5/10K run" width="500">
+                    </a>
+                </li>
+            </ol>
+        </section>
         </div>
     </div>
 </body>
