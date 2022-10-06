@@ -93,17 +93,14 @@ Desc:     The file contains my CV website, styled with CSS.
             <h1>Career</h1>
             <section>
                 <h4 id="work">Work Experience</h4>
-                <table>
-                <caption>Employment Summary</caption>
-                <thead>
+                <table class="summary-table work-table">
+                    <caption>Employment Summary</caption>
                     <tr>
                         <th>Job Title</th>
                         <th>Employer</th>
                         <th>Dates</th>
                         <th>Responsibilities</th>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
                         <td>Math Tutor</td>
                         <td>Gonzaga University Math Department</td>
@@ -134,7 +131,15 @@ Desc:     The file contains my CV website, styled with CSS.
                             <li>Effectively worked in a team of four students</li>
                         </ul></td>
                     </tr>
-                </tbody>
+                    <tr>
+                        <td>Course Grader</td>
+                        <td>Gonzaga University CS Department</td>
+                        <td>January 2022 - May 2022</td>
+                        <td><ul>
+                            <li>Reviewed and graded Python code from students of various technical backgrounds</li>
+                            <li>Provided positive supoprt and constructive criticism to students for improving their abilities</li>
+                        </ul></td>
+                    </tr>
                 </table>
             </section>
             <section>
@@ -176,91 +181,88 @@ Desc:     The file contains my CV website, styled with CSS.
         </section>
         <section id="education">
             <h1>Education and Qualifications</h1>
-            <table>
+            <table class="summary-table">
                 <caption>Institutions Attended</caption>
-                <thead>
-                    <tr>
-                        <th>School</th>
-                        <th>Location</th>
-                        <th>Dates</th>
-                        <th>Studies/Degrees/Relevant Courses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gonzaga University</td>
-                        <td>Spokane, WA</td>
-                        <td>August 2019 - Present</td>
-                        <td><ul>
-                            <li>B.S. in Computer Science (May 2023)</li>
-                            <li>B.S. in Mathematics (August 2023)</li>
-                            <li>President's List</li>
-                        </ul></td>
-                    </tr>
-                    <tr>
-                        <td>Columbia Gorge Community College</td>
-                        <td>The Dalles, OR</td>
-                        <td>September 2018 - June 2019</td>
-                        <td><ul>
-                            <li>Part time student during high school</li>
-                            <li>Honor Roll</li>
-                        </ul></td>
-                    </tr>
-                    <tr>
-                        <td>Sherman County High School</td>
-                        <td>Moro, OR</td>
-                        <td>September 2018 - June 2019</td>
-                        <td><ul>
-                            <li>High school diploma</li>
-                            <li>Valedictorian</li>
-                        </ul></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>School</th>
+                    <th>Location</th>
+                    <th>Dates</th>
+                    <th>Degrees/Honors</th>
+                </tr>
+                <tr>
+                    <td>Gonzaga University</td>
+                    <td>Spokane, WA</td>
+                    <td>August 2019 - Present</td>
+                    <td><ul>
+                        <li>B.S. in Computer Science (May 2023)</li>
+                        <li>B.S. in Mathematics (August 2023)</li>
+                        <li>President's List</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>Columbia Gorge Community College</td>
+                    <td>The Dalles, OR</td>
+                    <td>September 2018 - June 2019</td>
+                    <td><ul>
+                        <li>Part time student during high school</li>
+                        <li>Honor Roll</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>Sherman County High School</td>
+                    <td>Moro, OR</td>
+                    <td>September 2018 - June 2019</td>
+                    <td><ul>
+                        <li>High school diploma</li>
+                        <li>Valedictorian</li>
+                        <li>Outstanding senior boy</li>
+                    </ul></td>
+                </tr>
             </table>
-            <table>
+            <table class="summary-table">
                 <caption>Qualifications</caption>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Date Received</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fundamentals of Coaching</td>
-                        <td>December 13, 2019</td>
-                        <td>NFHS certification for the basics of coaching in high school athletics</td>
-                    </tr>
-                    <tr>
-                        <td>Heat Illness Prevention</td>
-                        <td>December 12, 2019</td>
-                        <td>NFHS certification for preventing heat illness in high school athletes during sports practices and games</td>
-                    </tr>
-                    <tr>
-                        <td>Concussion in Sports</td>
-                        <td>May 7, 2021</td>
-                        <td>NFHS certification for preventing, identifying, and handling student-athletes with concussions in high school sports</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Date Received</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Fundamentals of Coaching</td>
+                    <td>December 13, 2019</td>
+                    <td>NFHS certification for the basics of coaching in high school athletics</td>
+                </tr>
+                <tr>
+                    <td>Heat Illness Prevention</td>
+                    <td>December 12, 2019</td>
+                    <td>NFHS certification for preventing heat illness in high school athletes during sports practices and games</td>
+                </tr>
+                <tr>
+                    <td>Concussion in Sports</td>
+                    <td>May 7, 2021</td>
+                    <td>NFHS certification for preventing, identifying, and handling student-athletes with concussions in high school sports</td>
+                </tr>
             </table>
         </section>
         <section id="interests">
             <h1>Interests and Hobbies</h1>
-            <ol>
+            <ol class="interests-list">
                 <li>
                     Research in mathematics<br>
-                    <img src="images/math-presenting.jpg" alt="Presentation at PiMUC 2022" width="500">
+                    <img src="images/math-presenting.jpg" alt="Presentation at PiMUC 2022">
                 </li>
                 <li>
                     Coaching basketball<br>
-                    <img src="images/coaching.jpg" alt="5th/6th boys basketball at Condon" width="500">
+                    <img src="images/coaching.jpg" alt="5th/6th boys basketball at Condon">
                 </li>
                 <li>
                     Running<br>
                     <a href="https://www.facebook.com/hauserlake10kicebreakerrun/" target="_blank">
-                        <img src="images/hauser.png" alt="Annual Lake Hauser 5/10K run" width="500">
+                        <img src="images/hauser.png" alt="Annual Lake Hauser 5/10K run">
                     </a>
+                </li>
+                <li>
+                    Hiking<br>
+                    <img src="images/colorado.jpg" alt="Hiking trip in Colorado">
                 </li>
             </ol>
         </section>

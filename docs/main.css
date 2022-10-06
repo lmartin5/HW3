@@ -7,11 +7,12 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
     display: block;
-    width: 100px;
+    width: 125px;
 }
 
 .profile {
@@ -22,8 +23,13 @@ body {
 nav {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 20px;
     margin-right: 20px;
+    padding-left: 20px;
+    font-size: x-large;
+}
+
+nav a {
+    margin-left: 50px;
 }
 
 .CV-main {
@@ -73,3 +79,47 @@ nav {
     background-repeat: no-repeat;
     background-size: 20px;
 }
+
+.summary-table {
+    background-color: lightgrey;
+    border-spacing: 0px;
+    border: 10px solid skyblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.summary-table caption {
+    background-color: skyblue;
+    height: 30px;
+    line-height: 35px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.summary-table td {
+    padding: 20px;
+}
+
+.summary-table tr:nth-child(odd) {
+    background-color: lightblue;
+ }
+
+.summary-table tr:nth-child(even) {
+    background-color: lightgrey;
+ }
+
+ /* Preventing the date column from wrapping */
+ .work-table td:nth-child(3) {
+    white-space: nowrap;
+    text-align: center;
+ }
+
+ .interests-list {
+    list-style-type: upper-roman;
+ }
+
+ .interests-list img {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
